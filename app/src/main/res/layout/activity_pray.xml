@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="선교편지"
+            android:gravity="left"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/font1"
+            android:textColor="#0091EA"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:fontFamily="@font/font1"
+            android:onClick="test1"
+            android:padding="3dp"
+            android:text="2020년 10월 선교편지"
+            android:textSize="23dp" />
+
+
+        <TextView
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/font1"
+            android:text="기도 제목"
+            android:textColor="#0091EA"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="1. 11월 7일에 있을 락차이 선교센터 헌당식을 위해"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="2. 잃어버린 어린양들을 위해."
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="3. 사역자들의 건강을 위하여."
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="4. 센터의 사역과 운영을 위하여 지혜를 주시고 인도하시기를."
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="5. 준비중인 문화사역을(미디어 전도) 위해 "
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="6. 코로나로 인해 어려워진 경제적인 문제와 질병 분쟁들을 잘 극복할 수 있기를."
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="7. 센터 맞은편 절과의 모든 문제가 해결 되어지고 전도의 문이 열리기를. "
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="7dp"
+            android:padding="3dp"
+            android:fontFamily="@font/font1"
+            android:text="8. 아이들 오고 가는 길 안전으로 지켜주시길 "
+            android:textSize="15dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cookandroid.registerloginexample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/thaippf"
+        android:label="ThaiPPF"
+        android:roundIcon="@drawable/thaippf"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize"
+        android:usesCleartextTraffic="true">
+       <activity android:name=".httpUtil.LoginActivity" /> <!--  로그인 진행-->
+        <activity android:name=".SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+          <activity android:name=".httpUtil.RegisterActivity" /> <!-- 회원가입 진행-->
+          <activity android:name=".MainActivity">
+
+              <!--    <intent-filter>
+                      <action android:name="android.intent.action.MAIN" />
+
+                      <category android:name="android.intent.category.LAUNCHER" />
+                  </intent-filter> -->
+
+
+              </activity>
+              <activity android:name=".Unuse.FirstivActivity"></activity>
+              <activity android:name=".FirstScreen"></activity>
+              <activity android:windowSoftInputMode="adjustPan"  android:name=".SosicActivity"></activity>
+              <activity android:name=".PrayActivity"></activity>
+              <activity android:name=".DangiActivity"></activity>
+              <activity android:name=".WebView.ComesnsActivity"></activity>
+              <activity android:name=".WebView.WebViewActivity"></activity>
+              <activity android:name=".WebView.FacebookActivity"></activity>
+              <activity android:name=".WebView.BlogActivity"></activity>
+              <activity android:name=".WebView.YoutubeActivity"></activity>
+              <activity android:name=".HuwonActivity"></activity>
+
+              <activity android:name=".DetailActivity"></activity>
+
+
+          </application>
+
+      </manifest>

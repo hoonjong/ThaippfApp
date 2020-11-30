@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "463727092360",
+    "firebase_url": "https://thaippf-2d6e4.firebaseio.com",
+    "project_id": "thaippf-2d6e4",
+    "storage_bucket": "thaippf-2d6e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463727092360:android:cbc3eebe858a250a14f53d",
+        "android_client_info": {
+          "package_name": "com.cookandroid.registerloginexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463727092360-c38hfi7lssdj50isfj6h0ekgrj7m612h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpkaE1Wvk5SRUT2vuSj28FKfEHFTzXzpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463727092360-c38hfi7lssdj50isfj6h0ekgrj7m612h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
