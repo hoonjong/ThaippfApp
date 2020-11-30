@@ -1,6 +1,6 @@
 package com.cookandroid.registerloginexample;
 
-/*import android.os.Bundle;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -23,7 +23,7 @@ import java.util.List;
 
 
 public class TestFirebase extends AppCompatActivity {
-   // ArrayList<adapter> mItems = new ArrayList<>();
+    // ArrayList<adapter> mItems = new ArrayList<>();
 
     private Button sendbt;
     private EditText editdt, editdt1;
@@ -45,18 +45,18 @@ public class TestFirebase extends AppCompatActivity {
         setContentView(R.layout.activity_test);
 
 
-     sendbt = (Button) findViewById(R.id.inputBtn);
-     editdt = (EditText) findViewById(R.id.editText);
-     editdt1 = (EditText) findViewById(R.id.editText1);
-     listView = (ListView) findViewById(R.id.listviewmsg);
+        sendbt = (Button) findViewById(R.id.inputBtn);
+        editdt = (EditText) findViewById(R.id.editText);
+        editdt1 = (EditText) findViewById(R.id.editText1);
+        listView = (ListView) findViewById(R.id.listviewmsg);
 
-     initDatabase();
+        initDatabase();
 
         BoardAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, new ArrayList<String>());
         listView.setAdapter(BoardAdapter);
-       //데이터입력방식1 databaseReference.child("message").push().setValue("2");
+        //데이터입력방식1 databaseReference.child("message").push().setValue("2");
 
-       //데이터입력방식2 databaseReference.child("message").child("gbgg").setValue("2");
+        //데이터입력방식2 databaseReference.child("message").child("gbgg").setValue("2");
 
         sendbt.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
@@ -100,40 +100,40 @@ public class TestFirebase extends AppCompatActivity {
 
     }
 
-        private void initDatabase() {
-            mDatabase = FirebaseDatabase.getInstance();
+    private void initDatabase() {
+        mDatabase = FirebaseDatabase.getInstance();
 
-            mReference = mDatabase.getReference("log");
-            mReference.child("log").setValue("check");
+        mReference = mDatabase.getReference("log");
+        mReference.child("log").setValue("check");
 
-            mChild = new ChildEventListener() {
+        mChild = new ChildEventListener() {
 
-                @Override
-                public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                }
+            }
 
-                @Override
-                public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
-                }
+            }
 
-                @Override
-                public void onChildRemoved(DataSnapshot dataSnapshot) {
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
 
-                }
+            }
 
-                @Override
-                public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-                }
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+            }
 
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
 
-                }
-            };
-            mReference.addChildEventListener(mChild);
-        }
+            }
+        };
+        mReference.addChildEventListener(mChild);
+    }
 
     @Override
     protected void onDestroy() {
@@ -144,7 +144,7 @@ public class TestFirebase extends AppCompatActivity {
 
 
 
-}*/
+}
 
 
 
