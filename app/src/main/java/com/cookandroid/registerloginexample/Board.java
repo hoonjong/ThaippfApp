@@ -7,7 +7,7 @@ public class Board {
    // String date;
 
 
-    Board() {}
+   Board() {}
 
     Board(String title, String content) {
         this.title = title;

@@ -70,16 +70,12 @@ public class NotiAdapter extends BaseAdapter {
             public void onClick(View v) {
 
              //   myref.database.ref().child('/chat/ㅇㅇ').set(null);
-                //myRef = database.getReference("testLog");
+                myRef = database.getReference("testLog");
                 list.remove(position);
                 notifyDataSetChanged(); //온클릭 안에서 리스트뷰를 새로고침 함
 
             }
         }) ;
-
-
-
-
 
 
 

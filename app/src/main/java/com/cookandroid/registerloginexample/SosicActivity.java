@@ -47,7 +47,7 @@ public class SosicActivity extends AppCompatActivity {
 
     long now = System.currentTimeMillis();
     // 현재시간을 date 변수에 저장한다.
-     Date date = new Date(now);
+    Date date = new Date(now);
     // 시간을 나타냇 포맷을 정한다 ( yyyy/MM/dd 같은 형태로 변형 가능 )
     SimpleDateFormat sdfNow = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
     // nowDate 변수에 값을 저장한다.
@@ -82,8 +82,6 @@ public class SosicActivity extends AppCompatActivity {
         editText11 = (EditText) findViewById(R.id.editText11);
         //editText.setTextIsSelectable(true);
         //editText.setTextIsSelectable(true);
-
-
 
 
 
@@ -127,16 +125,19 @@ public class SosicActivity extends AppCompatActivity {
 
                 //dataAdapter.clear();
                 notidataList.clear();
+
                 for (DataSnapshot messageData : dataSnapshot.getChildren()) {
                     String msg = messageData.getValue(String.class);
                     Log.d("testLog", msg);
 
                     // 파싱하는 부분 @로 파싱해서 제목과 내용을 분리
                     // filter[0] = "제목", filter[1] = "내용"
-                    String[] filter = new String[0];
+                    String[] filter = new String[2];
                     if (msg != null) {
                         filter = msg.split("@");
                     }
+                    System.out.println(filter.length);
+                    Log.d("testLog1", msg);
 
                     // 이 부분에서 title이랑 subtitle getValue()를 해서 null이 나오는 것 같아요
                     // 데이터 불러오는 부분 예제를 좀 봐야할 것 같은데요ㅠㅠ 잠시만요 보고올게요ㅋㅋㅋ
@@ -191,8 +192,7 @@ public class SosicActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //String str = editText.getText().toString().trim();
 
-                dateNow = (TextView) findViewById(R.id.date);
-                dateNow.setText(formatDate);    // TextView 에 현재 시간 문자열 할당
+
 
 
                 String strTitle = editText10.getText().toString().trim();

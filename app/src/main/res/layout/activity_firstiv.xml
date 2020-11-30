@@ -6,101 +6,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:text="선교지 소개"
-            android:gravity="left"
-            android:padding="3dp"
-            android:textSize="23dp"
-            android:layout_margin="3dp"
-            android:fontFamily="@font/baeminjua"
-            android:textColor="#000000"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="145dp"
-            android:padding="3dp"
-            android:text="Promise Partners Foundation(하나님의 언약의 사람들) 이라는 뜻을 가지고  2014년부터 태국  치앙마이에서 박문성, 고봉신 선교사(해외한인장로회(KPCA) 파송)를 중심으로 잃어버린 영혼을 찾는 선교단체입니다.
-PPF는 하나님이 허락하신 언약의 땅에서 언약의 동역자들과 함께 주님의 사역에 동참하기를 소망합니다."
-            android:textSize="17dp"/>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="400dp"
+                android:layout_height="137dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="iv1"
+                android:scaleType="centerInside"
+                android:src="@drawable/sogae" />
 
-        <ImageView
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/sogae" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="270dp"
-            android:layout_margin="7dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/danche"/>
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="PPF 락빤센터 아이들과 한국단기선교팀"
-            android:textSize="11dp"/>
+            android:orientation="horizontal">
 
-        <TextView
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baeminjua"
+                android:gravity="center_horizontal"
+                android:text="선교지 소개 (태국치앙마이)"
+                android:textColor="#2E2823"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baeminjua"
+                android:gravity="center_horizontal"
+                android:text="주요사역"
+                android:textColor="#2E2823"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="대표적인 사역 소개"
-            android:gravity="left"
-            android:padding="3dp"
-            android:textSize="23dp"
-            android:layout_margin="2dp"
-            android:fontFamily="@font/baeminjua"
-            android:textColor="#000000"/>
+            android:layout_height="250dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sogae" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:padding="3dp"
-            android:text="1. 태국의 복음이 전파되지 않은 곳에 복음을 전하고 현지사역자를 세워 사역할 수 있도록 돕습니다."
-            android:textSize="13dp"/>
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:padding="3dp"
-            android:text="2. 각 지역 PPF센터에서 'Promise School'를 운영하여 어린이를 대상으로 한국어,영어, 음악, 말씀을 가르쳐 언약의 사람들로 성장 할 수 있도록 합니다."
-            android:textSize="13dp"/>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/baeminjua"
+                android:gravity="center_horizontal"
+                android:text="사역자소개 및 연락처"
+                android:textColor="#2E2823"
+                android:textSize="17sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:padding="3dp"
-            android:text="3. 싱글선교사, 현지 신학생들이 사역자로 설 수 있도록 돕습니다(McGilvary college of divinty, Payap University 교수사역)."
-            android:textSize="13dp"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:padding="3dp"
-            android:text="4. 각 지역 PPF센터에서 어른들을 대상으로 침술 사역을 진행하며, '마을 살리기 프로젝트'(벽화, 집짓기 등)을 통해 전도를 합니다."
-            android:textSize="13dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:padding="3dp"
-            android:text="5. 센터 주변 학교에서 한국어 교육과 한국 단기선교팀 공연, 크리스천 반을 맡아 학교 전도에 힘쓰고 있습니다."
-            android:textSize="13dp"/>
-
+        </LinearLayout>
 
 
 
@@ -118,5 +119,3 @@ PPF는 하나님이 허락하신 언약의 땅에서 언약의 동역자들과 �
 
     </LinearLayout>
 </ScrollView>
-
-
