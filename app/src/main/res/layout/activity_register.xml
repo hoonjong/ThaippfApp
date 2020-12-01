@@ -73,7 +73,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="#2196F3"
+
+        android:background="@drawable/edge"
         android:textColor="#2E2823"
         android:text="회원가입"
         app:layout_constraintEnd_toEndOf="@+id/et_age"

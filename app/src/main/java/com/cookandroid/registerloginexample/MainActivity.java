@@ -9,6 +9,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.cookandroid.registerloginexample.Unuse.FirstivActivity;
 import com.cookandroid.registerloginexample.WebView.BlogActivity;
@@ -109,18 +110,22 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.insta:
                     intent = new Intent(MainActivity.this, WebViewActivity.class);
                     startActivity(intent);
+                    Toast.makeText(getApplicationContext(), "인스타그램 페이지를 여는중입니다. \n 잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
                     break;
                 case R.id.facebook:
                     intent = new Intent(MainActivity.this,FacebookActivity.class);
                     startActivity(intent);
+                    Toast.makeText(getApplicationContext(), "페이스북 페이지를 여는중입니다.  \n 잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
                     break;
                 case R.id.naver:
                     intent = new Intent(MainActivity.this,BlogActivity.class);
                     startActivity(intent);
+                    Toast.makeText(getApplicationContext(), "블로그 페이지를 여는중입니다. \n  잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
                     break;
                 case R.id.youtube:
                     intent = new Intent(MainActivity.this,YoutubeActivity.class);
                     startActivity(intent);
+                    Toast.makeText(getApplicationContext(), "유튜브 채널을 여는중입니다. \n  잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
                     break;
                 case R.id.register:
                     register = findViewById(R.id.register);

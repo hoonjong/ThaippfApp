@@ -66,6 +66,7 @@
             android:id="@+id/inputBtn"
             android:layout_width="400dp"
             android:layout_height="0dp"
+            android:background="@drawable/edge"
             android:layout_weight="1"
             android:layout_gravity="center"
             android:fontFamily="@font/boardbold"
