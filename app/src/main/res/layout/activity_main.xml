@@ -44,6 +44,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal">
 
         <TextView
@@ -51,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/edge"
             android:fontFamily="@font/baeminjua"
             android:gravity="center_horizontal"
             android:text="선교지 소개"
@@ -62,6 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/edge"
             android:fontFamily="@font/baeminjua"
             android:gravity="center_horizontal"
             android:text="선교지 소식"
@@ -103,6 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/edge"
             android:fontFamily="@font/baeminjua"
             android:gravity="center_horizontal"
             android:text="사역 앨범"
@@ -114,6 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/edge"
             android:fontFamily="@font/baeminjua"
             android:gravity="center_horizontal"
             android:text="단기 선교 준비"
@@ -159,6 +164,7 @@
             android:fontFamily="@font/baeminjua"
             android:gravity="center_horizontal"
             android:text="선교편지 and 기도제목"
+            android:background="@drawable/edge"
             android:textColor="#2E2823"
             android:textSize="17sp" />
 
@@ -169,6 +175,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/baeminjua"
             android:gravity="center_horizontal"
+            android:background="@drawable/edge"
             android:text="온라인 후원 안내"
             android:textColor="#2E2823"
             android:textSize="17sp" />
@@ -187,6 +194,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+
             android:text="사진을 클릭하시면 내용이 표시됩니다."
             android:textSize="15sp"/>
 
@@ -205,6 +213,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="7dp"
+            android:background="@drawable/edge"
             android:scaleType="centerCrop"
             android:src="@drawable/inste" />
 
@@ -213,6 +222,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="7dp"
+            android:background="@drawable/edge"
             android:scaleType="centerCrop"
             android:src="@drawable/facebok" />
 
@@ -221,6 +231,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="7dp"
+            android:background="@drawable/edge"
             android:scaleType="centerCrop"
             android:src="@drawable/nave3" />
 
@@ -229,6 +240,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="7dp"
+            android:background="@drawable/edge"
             android:scaleType="centerCrop"
             android:src="@drawable/yotu3" />
 
@@ -247,7 +259,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="#2196F3"
+        android:background="@drawable/edge"
         android:layout_gravity="center"
         android:textColor="#2E2823"
         android:fontFamily="@font/font1"
@@ -259,7 +271,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:background="#2196F3"
+        android:background="@drawable/edge"
         android:layout_gravity="center"
         android:textColor="#2E2823"
         android:fontFamily="@font/font1"
