@@ -21,7 +21,6 @@ public class Firstiv extends AppCompatActivity {
     private ImageView imageView1;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +33,6 @@ public class Firstiv extends AppCompatActivity {
 
     private void setView() {
         imageView1 = findViewById(R.id.imageView1);
-
 
 
         imageView1.setOnClickListener(onClickListener);
@@ -51,22 +49,8 @@ public class Firstiv extends AppCompatActivity {
                     startActivity(intent);
                     break;
 
-
-
-                        }
-                    }
-
-
-
-
-
-
-
-            };
-
+            }
         }
 
-
-
-
-
+    };
+}
