@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(View v) {
                             Intent intent = new Intent(getApplicationContext(), WebViewActivity.class);
                             startActivity(intent);
+
                         }
                     });
 
@@ -110,8 +111,10 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(View v) {
                             Intent intent = new Intent(getApplicationContext(), FacebookActivity.class);
                             startActivity(intent);
+
                         }
                     });
+
 
                 case R.id.naver:
                     naver = findViewById(R.id.naver);
@@ -148,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(View v) {
                             Intent intent = new Intent(MainActivity.this , LoginActivity.class);
                             startActivity(intent);
+
                         }
                     });
 
