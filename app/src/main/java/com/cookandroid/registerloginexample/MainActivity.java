@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         facebook = findViewById(R.id.facebook);
         naver = findViewById(R.id.naver);
         youtube = findViewById(R.id.youtube);
+        sign = findViewById(R.id.sign);
+
 
 
 
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         facebook.setOnClickListener(onClickListener);
         naver.setOnClickListener(onClickListener);
         youtube.setOnClickListener(onClickListener);
+        sign.setOnClickListener(onClickListener);
       //  test.setOnClickListener(onClickListener);
     }
 
@@ -129,29 +132,9 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 case R.id.sign:
-                    sign = findViewById(R.id.sign);
-                    sign.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(MainActivity.this , LoginActivity.class);
-                            startActivity(intent);
-
-                        }
-                    });
-
-                /*case R.id.test:
-                    test = findViewById(R.id.test);
-                    test.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(MainActivity.this , TestFirebase.class);
-                            startActivity(intent);
-                        }
-                    });*/
-
-
-
-
+                    intent = new Intent(MainActivity.this,LoginActivity.class);
+                    startActivity(intent);
+                    break;
 
 
 
