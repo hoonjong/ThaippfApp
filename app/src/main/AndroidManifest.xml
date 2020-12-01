@@ -47,7 +47,10 @@
               <activity android:name=".WebView.YoutubeActivity"></activity>
               <activity android:name=".HuwonActivity"></activity>
 
+
               <activity android:name=".DetailActivity"></activity>
+              <activity android:name=".Firstiv"></activity>
+              <activity android:name=".SungoSogaeActivity"></activity>
 
 
           </application>
