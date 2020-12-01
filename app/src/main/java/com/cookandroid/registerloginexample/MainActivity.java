@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -48,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
         youtube = findViewById(R.id.youtube);
         register = findViewById(R.id.register);
         sign = findViewById(R.id.sign);
+        insta = findViewById(R.id.insta);
+        facebook = findViewById(R.id.facebook);
+        naver = findViewById(R.id.naver);
+        youtube = findViewById(R.id.youtube);
+
+
 
 
         imageView1.setOnClickListener(onClickListener);
@@ -62,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
         youtube.setOnClickListener(onClickListener);
         register.setOnClickListener(onClickListener);
         sign.setOnClickListener(onClickListener);
+        insta.setOnClickListener(onClickListener);
+        facebook.setOnClickListener(onClickListener);
+        naver.setOnClickListener(onClickListener);
+        youtube.setOnClickListener(onClickListener);
       //  test.setOnClickListener(onClickListener);
     }
 
@@ -79,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.imageView3:
-
                     break;
                 case R.id.imageView4:
                     intent = new Intent(MainActivity.this, DangiActivity.class);
@@ -94,47 +104,21 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.insta:
-                    insta = findViewById(R.id.insta);
-                    insta.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), WebViewActivity.class);
-                            startActivity(intent);
-
-                        }
-                    });
-
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    startActivity(intent);
+                    break;
                 case R.id.facebook:
-                    facebook = findViewById(R.id.facebook);
-                    facebook.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), FacebookActivity.class);
-                            startActivity(intent);
-
-                        }
-                    });
-
-
+                    intent = new Intent(MainActivity.this,FacebookActivity.class);
+                    startActivity(intent);
+                    break;
                 case R.id.naver:
-                    naver = findViewById(R.id.naver);
-                    naver.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), BlogActivity.class);
-                            startActivity(intent);
-                        }
-                    });
-
+                    intent = new Intent(MainActivity.this,BlogActivity.class);
+                    startActivity(intent);
+                    break;
                 case R.id.youtube:
-                    youtube = findViewById(R.id.youtube);
-                    youtube.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(getApplicationContext(), YoutubeActivity.class);
-                            startActivity(intent);
-                        }
-                    });
+                    intent = new Intent(MainActivity.this,YoutubeActivity.class);
+                    startActivity(intent);
+                    break;
                 case R.id.register:
                     register = findViewById(R.id.register);
                     register.setOnClickListener(new View.OnClickListener() {
