@@ -26,6 +26,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
             android:text="태국의 역사"
+            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -89,6 +90,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
             android:text="태국의 종교"
+            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -109,6 +111,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
             android:text="태국의 전통문화"
+            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -174,6 +177,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
             android:text="태국의 기후"
+            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -194,6 +198,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
             android:text="자료 공간"
+            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
