@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+//커밋테스트중
 public class DangiActivity extends AppCompatActivity {
 
     @Override
