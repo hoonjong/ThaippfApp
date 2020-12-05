@@ -1,30 +1,20 @@
 
 package com.cookandroid.registerloginexample;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.cookandroid.registerloginexample.Board;
-import com.cookandroid.registerloginexample.NotiAdapter;
-import com.cookandroid.registerloginexample.R;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,9 +24,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class SosicActivity extends AppCompatActivity {
     // 제목, 내용
@@ -54,8 +41,6 @@ public class SosicActivity extends AppCompatActivity {
     String formatDate = sdfNow.format(date);
 
     TextView dateNow;
-
-
 
 
     // DB 데이터를 보여줄 ListView
@@ -80,9 +65,6 @@ public class SosicActivity extends AppCompatActivity {
         // 변수 초기화
         editText10 = (EditText) findViewById(R.id.editText10);
         editText11 = (EditText) findViewById(R.id.editText11);
-        //editText.setTextIsSelectable(true);
-        //editText.setTextIsSelectable(true);
-
 
 
         deletebtn = (Button) findViewById(R.id.delete);
@@ -90,26 +72,28 @@ public class SosicActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
 
         // DB 관련 변수 초기화
+        //데이터베이스의 인스턴스를 가져온다고 생각(즉, Root를 가져온다고 이해하면 쉬움)
         database = FirebaseDatabase.getInstance();
         // message Reference가 없어도 상관 x
 
         notidataList = new ArrayList<>();
+        //Root밑에 있는 “message”라는 위치를 참조함
 
         myRef = database.getReference("message");
 
 
+        listView.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView parent, View v, int position, long id) {
+                        Log.e("TEST", "ENTER");
+                        Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+                        /* putExtra의 첫 값은 식별 태그, 뒤에는 다음 화면에 넘길 값 */
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView parent, View v, int position, long id) {
-                Log.e("TEST", "ENTER");
-                Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
-                /* putExtra의 첫 값은 식별 태그, 뒤에는 다음 화면에 넘길 값 */
-
-                intent.putExtra("title", notidataList.get(position).getcontent());
-                startActivity(intent);
-            }
-        });
+                        intent.putExtra("title", notidataList.get(position).getcontent());
+                        startActivity(intent);
+                    }
+                });
 
         // 자신이 얻은 Reference에 이벤트를 붙여줌
         // 데이터의 변화가 있을 때 출력해옴
@@ -125,6 +109,7 @@ public class SosicActivity extends AppCompatActivity {
 
                 //dataAdapter.clear();
                 notidataList.clear();
+                Board board = dataSnapshot.getValue(Board.class);
 
                 for (DataSnapshot messageData : dataSnapshot.getChildren()) {
                     String msg = messageData.getValue(String.class);
@@ -132,7 +117,7 @@ public class SosicActivity extends AppCompatActivity {
 
                     // 파싱하는 부분 @로 파싱해서 제목과 내용을 분리
                     // filter[0] = "제목", filter[1] = "내용"
-                    String[] filter = new String[2];
+                    String[] filter = new String[0];
                     if (msg != null) {
                         filter = msg.split("@");
                     }
@@ -174,8 +159,6 @@ public class SosicActivity extends AppCompatActivity {
                 // ListView 의 위치를 마지막으로 보내주기 위함
                 //listView.setSelection(dataAdapter.getCount() - 1);
                 listView.setSelection(notidataList.size() - 1);
-
-
             }
 
             @Override
@@ -191,8 +174,6 @@ public class SosicActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //String str = editText.getText().toString().trim();
-
-
 
 
                 String strTitle = editText10.getText().toString().trim();

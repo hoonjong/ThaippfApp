@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -95,27 +94,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/edge"
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center"
-                android:background="@drawable/edge"
                 android:text="사역자소개 및 연락처"
                 android:textColor="#2E2823"
                 android:textSize="17sp" />
 
         </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </LinearLayout>

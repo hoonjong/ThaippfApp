@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView1"
     android:layout_width="wrap_content"
@@ -24,9 +23,9 @@
             android:layout_width="395dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:text="태국의 역사"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -88,9 +87,9 @@
             android:layout_width="395dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:text="태국의 종교"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -245,14 +244,6 @@
             android:padding="3dp"
             android:text="태국 회화 공부하기(2)"
             android:textSize="23dp" />
-
-
-
-
-
-
-
-
 
 
     </LinearLayout>

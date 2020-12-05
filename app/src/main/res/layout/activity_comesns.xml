@@ -7,33 +7,34 @@
     android:orientation="vertical"
     tools:context=".WebView.ComesnsActivity">
 
-  <LinearLayout
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal">
-    <Button
-        android:id="@+id/WebView_btn"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#2196F3"
-        android:text="PPF 인스타그램"
-        android:textColor="#fff"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-      <Button
-          android:id="@+id/WebView_btn1"
-          android:layout_width="wrap_content"
-          android:layout_height="70dp"
-          android:layout_margin="5dp"
-          android:text="PPF페이스북"/>
+        <Button
+            android:id="@+id/WebView_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="PPF 인스타그램"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-      <Button
-          android:id="@+id/WebView_btn2"
-          android:layout_width="wrap_content"
-          android:layout_height="70dp"
-          android:layout_margin="5dp"
-          android:text="블로그"/>
+        <Button
+            android:id="@+id/WebView_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:text="PPF페이스북" />
+
+        <Button
+            android:id="@+id/WebView_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:text="블로그" />
     </LinearLayout>
 
 </LinearLayout>

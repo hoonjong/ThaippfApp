@@ -5,9 +5,9 @@
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
     android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
     android:focusable="false"
     android:focusableInTouchMode="false"
-    android:descendantFocusability="blocksDescendants"
     app:cardCornerRadius="15dp"
     app:cardElevation="10dp">
 
@@ -21,8 +21,8 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="제목"
             android:fontFamily="@font/baeminjua"
+            android:text="제목"
             android:textColor="#000000"
             android:textSize="24dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -33,9 +33,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/baeminjua"
             android:textColor="#000000"
             android:textSize="15dp"
-            android:fontFamily="@font/baeminjua"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
@@ -53,8 +53,8 @@
             android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:fontFamily="@font/baeminjua"
             android:background="#CBD6D6"
+            android:fontFamily="@font/baeminjua"
             android:text="삭제" />
 
     </LinearLayout>

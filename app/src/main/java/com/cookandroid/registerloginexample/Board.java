@@ -7,9 +7,9 @@ public class Board {
    // String date;
 
 
-   Board() {}
+  public Board() {}
 
-    Board(String title, String content) {
+    public Board(String title, String content) {
         this.title = title;
         this.content = content;
 
