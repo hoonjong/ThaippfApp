@@ -17,8 +17,9 @@
             android:text="선교편지"
             android:gravity="left"
             android:textSize="25dp"
+            android:background="@drawable/edge"
             android:layout_margin="10dp"
-            android:fontFamily="@font/font1"
+            android:fontFamily="@font/baeminjua"
             android:textColor="#0091EA"/>
 
         <Button
@@ -37,8 +38,9 @@
             android:layout_width="395dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:fontFamily="@font/font1"
+            android:fontFamily="@font/baeminjua"
             android:text="기도 제목"
+            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="25dp" />
 

@@ -57,9 +57,6 @@ public class MainActivity extends AppCompatActivity {
         sign = findViewById(R.id.sign);
 
 
-
-
-
         imageView1.setOnClickListener(onClickListener);
         imageView2.setOnClickListener(onClickListener);
         imageView3.setOnClickListener(onClickListener);
