@@ -8,7 +8,7 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cookandroid.registerloginexample.R;
-
+//웹뷰 PPF 블로그 연결
 public class BlogActivity extends AppCompatActivity {
 
     private WebView webview2;

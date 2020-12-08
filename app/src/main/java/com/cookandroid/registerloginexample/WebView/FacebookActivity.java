@@ -8,7 +8,7 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cookandroid.registerloginexample.R;
-
+//웹뷰 ppf facebook 연결
 public class FacebookActivity extends AppCompatActivity {
 
     private WebView webview1;
