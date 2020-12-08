@@ -8,7 +8,7 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cookandroid.registerloginexample.R;
-
+//웹뷰 ppf youtube
 public class YoutubeActivity extends AppCompatActivity {
 
     private WebView webView3;
