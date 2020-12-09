@@ -1,5 +1,6 @@
 package com.cookandroid.registerloginexample;
 //12월 9일 주석
+//12월 9일 주석 테스트 (git)
 public class ExampleItem {
     private String mText1;
     private String mText2;
