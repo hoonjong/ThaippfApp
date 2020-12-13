@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView1"
     android:layout_width="wrap_content"
@@ -14,45 +13,45 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="Pray for Thailand"
-            android:gravity="left"
-            android:textSize="40dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textColor="#FF6D00"/>
+            android:gravity="left"
+            android:text="Pray for Thailand"
+            android:textColor="#FF6D00"
+            android:textSize="40dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left|top"
             android:layout_margin="5dp"
+            android:gravity="left|top"
             android:padding="3dp"
             android:text="유월절 전에 예수께서 자기가 세상을 떠나 아버지께로 돌아가실때가 이른 줄 아시고 세상에 있는 자기 사람들을 사랑하시되 끝까지 사랑하시니라 '요한복음 13장 1절'"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
 
         <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ajan1" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ajan1" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ajan2" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ajan2" />
         </LinearLayout>
 
         <LinearLayout
@@ -62,7 +61,7 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -71,7 +70,7 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
@@ -84,8 +83,8 @@
             android:layout_width="395dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="후원계좌"
             android:fontFamily="@font/font1"
+            android:text="후원계좌"
             android:textColor="#FF6D00"
             android:textSize="25dp" />
 
@@ -95,24 +94,24 @@
             android:orientation="horizontal">
 
             <TextView
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_margin="5dp"
-            android:padding="3dp"
-            android:fontFamily="@font/font1"
-            android:text="Tel. 태국/치앙마이"
-            android:textSize="14dp"/>
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/font1"
+                android:padding="3dp"
+                android:text="Tel. 태국/치앙마이"
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:padding="3dp"
                 android:fontFamily="@font/font1"
+                android:padding="3dp"
                 android:text="E-mail"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -124,49 +123,49 @@
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
+                android:layout_margin="5dp"
                 android:layout_marginTop="10dp"
-                android:layout_margin="5dp"
-                android:padding="3dp"
                 android:fontFamily="@font/font1"
+                android:padding="3dp"
                 android:text="+66. 091. 629. 7342"
-                android:textSize="14dp"/>
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:padding="3dp"
                 android:fontFamily="@font/font1"
+                android:padding="3dp"
                 android:text="박문성 pavarotti0629@hotmail.com"
-                android:textSize="13dp"/>
+                android:textSize="13dp" />
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_width="400dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_margin="5dp"
-                android:padding="3dp"
-                android:fontFamily="@font/font1"
-                android:text="070. 7527. 6732"
-                android:textSize="14dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:padding="3dp"
                 android:fontFamily="@font/font1"
+                android:padding="3dp"
+                android:text="070. 7527. 6732"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/font1"
+                android:padding="3dp"
                 android:text="고봉신 domybestgo@hotmail.com"
-                android:textSize="13dp"/>
+                android:textSize="13dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -178,29 +177,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:padding="10dp"
                 android:fontFamily="@font/font1"
-                android:textColor="#FF6D00"
+                android:padding="10dp"
                 android:text="후원계좌(한국): 917702-01-145292  국민은행. 박문성"
-                android:textSize="15dp"/>
+                android:textColor="#FF6D00"
+                android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:padding="10dp"
-                android:textColor="#FF6D00"
                 android:fontFamily="@font/font1"
+                android:padding="10dp"
                 android:text="후원계좌(미국): 42004373421  Citibank. Moon Sung Park"
-                android:textSize="14dp"/>
+                android:textColor="#FF6D00"
+                android:textSize="14dp" />
         </LinearLayout>
-
-
-
-
-
-
-
 
 
     </LinearLayout>

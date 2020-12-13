@@ -14,17 +14,19 @@
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
             android:layout_margin="5dp"
             android:fontFamily="@font/font1"
             android:text="태국선교를 준비하실때 참고하시면 좋을 내용을 모아둔 공간입니다."
             android:textSize="14sp" />
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
+            android:padding="7dp"
             android:text="태국의 역사"
             android:background="@drawable/edge"
             android:textColor="#0091EA"
@@ -85,7 +87,7 @@
             android:textSize="13dp" />
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -106,7 +108,7 @@
 
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -116,7 +118,7 @@
             android:textSize="27dp" />
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -134,7 +136,7 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -154,7 +156,7 @@
 
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -172,7 +174,7 @@
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -193,7 +195,7 @@
 
 
         <TextView
-            android:layout_width="395dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/font1"
@@ -206,11 +208,11 @@
         <Button
             android:id="@+id/btn1"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:fontFamily="@font/font1"
             android:onClick="test1"
-            android:padding="3dp"
+            android:padding="5dp"
             android:text="태국 자세히 들여다보기"
             android:textSize="23dp" />
 
@@ -218,11 +220,11 @@
         <Button
             android:id="@+id/btn2"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:fontFamily="@font/font1"
             android:onClick="test2"
-            android:padding="3dp"
+            android:padding="5dp"
             android:text="태국 간단히 들여다보기"
             android:textSize="23dp" />
 
@@ -230,22 +232,22 @@
         <Button
             android:id="@+id/btn3"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:fontFamily="@font/font1"
             android:onClick="test3"
-            android:padding="3dp"
+            android:padding="5dp"
             android:text="태국 회화 공부하기(1)"
             android:textSize="23dp" />
 
         <Button
             android:id="@+id/btn4"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:fontFamily="@font/font1"
             android:onClick="test4"
-            android:padding="3dp"
+            android:padding="5dp"
             android:text="태국 회화 공부하기(2)"
             android:textSize="23dp" />
 

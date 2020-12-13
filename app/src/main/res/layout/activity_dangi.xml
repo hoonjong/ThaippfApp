@@ -13,7 +13,7 @@
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:fontFamily="@font/font1"
             android:text="태국선교를 준비하실때 참고하시면 좋을 내용을 모아둔 공간입니다."
