@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView1"
     android:layout_width="wrap_content"
@@ -15,9 +14,9 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="4dp"
             android:layout_margin="5dp"
             android:fontFamily="@font/font1"
+            android:padding="4dp"
             android:text="태국선교를 준비하실때 참고하시면 좋을 내용을 모아둔 공간입니다."
             android:textSize="14sp" />
 
@@ -25,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:padding="7dp"
             android:text="태국의 역사"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -90,9 +89,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:text="태국의 종교"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -111,9 +110,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:text="태국의 전통문화"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -177,9 +176,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:text="태국의 기후"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -198,9 +197,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:background="@drawable/edge"
             android:fontFamily="@font/font1"
             android:text="자료 공간"
-            android:background="@drawable/edge"
             android:textColor="#0091EA"
             android:textSize="27dp" />
 
@@ -250,14 +249,6 @@
             android:padding="5dp"
             android:text="태국 회화 공부하기(2)"
             android:textSize="23dp" />
-
-
-
-
-
-
-
-
 
 
     </LinearLayout>
