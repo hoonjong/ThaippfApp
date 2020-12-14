@@ -21,7 +21,7 @@ import com.cookandroid.registerloginexample.httpUtil.RegisterActivity;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6,insta,facebook, naver, youtube, test;
+    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, insta, facebook, naver, youtube, test;
     private ListView m_oListView = null;
     //private ImageView insta, facebook, naver;
     private Button webview_btn, register, sign;
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         naver.setOnClickListener(onClickListener);
         youtube.setOnClickListener(onClickListener);
         sign.setOnClickListener(onClickListener);
-      //  test.setOnClickListener(onClickListener);
+        //  test.setOnClickListener(onClickListener);
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -107,43 +107,41 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.insta:
                     intent = new Intent(MainActivity.this, WebViewActivity.class);
                     startActivity(intent);
-                    Toast.makeText(getApplicationContext(), "인스타그램 페이지를 여는중입니다. \n 잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "인스타그램 페이지를 여는중입니다. \n 잠시만 기다려주세요", Toast.LENGTH_LONG).show();
                     break;
                 case R.id.facebook:
-                    intent = new Intent(MainActivity.this,FacebookActivity.class);
+                    intent = new Intent(MainActivity.this, FacebookActivity.class);
                     startActivity(intent);
-                    Toast.makeText(getApplicationContext(), "페이스북 페이지를 여는중입니다.  \n 잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "페이스북 페이지를 여는중입니다.  \n 잠시만 기다려주세요", Toast.LENGTH_LONG).show();
                     break;
                 case R.id.naver:
-                    intent = new Intent(MainActivity.this,BlogActivity.class);
+                    intent = new Intent(MainActivity.this, BlogActivity.class);
                     startActivity(intent);
-                    Toast.makeText(getApplicationContext(), "블로그 페이지를 여는중입니다. \n  잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "블로그 페이지를 여는중입니다. \n  잠시만 기다려주세요", Toast.LENGTH_LONG).show();
                     break;
                 case R.id.youtube:
-                    intent = new Intent(MainActivity.this,YoutubeActivity.class);
+                    intent = new Intent(MainActivity.this, YoutubeActivity.class);
                     startActivity(intent);
-                    Toast.makeText(getApplicationContext(), "유튜브 채널을 여는중입니다. \n  잠시만 기다려주세요" , Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "유튜브 채널을 여는중입니다. \n  잠시만 기다려주세요", Toast.LENGTH_LONG).show();
                     break;
                 case R.id.register:
                     register = findViewById(R.id.register);
                     register.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(MainActivity.this , RegisterActivity.class);
+                            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                             startActivity(intent);
                         }
                     });
                 case R.id.sign:
-                    intent = new Intent(MainActivity.this,LoginActivity.class);
+                    intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
                     break;
-
 
 
             }
 
         }
-
 
 
     };
