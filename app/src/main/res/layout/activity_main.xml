@@ -190,13 +190,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-
                 android:text="사진을 클릭하시면 내용이 표시됩니다."
                 android:textSize="15sp" />
 
 
         </LinearLayout>
 
+        <!-- PPF 사이트 링크(유튜브 등) -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
