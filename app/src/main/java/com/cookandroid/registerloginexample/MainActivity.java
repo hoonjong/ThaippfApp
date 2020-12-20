@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     //private ImageView insta, facebook, naver;
     private Button webview_btn, register, sign;
 
-
+//생명주기 onCreate - onStart - onResume 문제있으면 수정해야 함. 아직까진 괜찮은 상황 - 2020.12.20
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
