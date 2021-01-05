@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/edge"
+
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center_horizontal"
                 android:text="선교지 소개"
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/edge"
+
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center_horizontal"
                 android:text="선교지 소식"
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/edge"
+
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center_horizontal"
                 android:text="사역 앨범"
@@ -114,7 +114,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/edge"
+
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center_horizontal"
                 android:text="단기 선교 준비"
@@ -143,7 +143,7 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/huwon" />
+                android:src="@drawable/pray" />
 
         </LinearLayout>
 
@@ -157,7 +157,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/edge"
+
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center_horizontal"
                 android:text="선교편지 and 기도제목"
@@ -169,7 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/edge"
+
                 android:fontFamily="@font/baeminjua"
                 android:gravity="center_horizontal"
                 android:text="온라인 후원 안내"

@@ -1,4 +1,5 @@
 <resources>
+<!-- 안드로이드 업데이트하기 이번 버전이라서 XML에서 각각 태그들 관리하기가 더 편함 -->
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

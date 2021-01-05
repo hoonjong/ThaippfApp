@@ -1,4 +1,3 @@
-
 package com.cookandroid.registerloginexample;
 
 import android.content.Intent;

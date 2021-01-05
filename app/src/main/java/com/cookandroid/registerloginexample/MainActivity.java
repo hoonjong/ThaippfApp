@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.imageView3:
+                    Toast.makeText(MainActivity.this, "이 페이지는 현재 준비중입니다. 불편을 드려 죄송합니다.", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageView4:
                     intent = new Intent(MainActivity.this, DangiActivity.class);

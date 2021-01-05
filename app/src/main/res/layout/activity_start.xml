@@ -142,7 +142,7 @@
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@drawable/huwon" />
+                android:src="@drawable/pray" />
 
         </LinearLayout>
 

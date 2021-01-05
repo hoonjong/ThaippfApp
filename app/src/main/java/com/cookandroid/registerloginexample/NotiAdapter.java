@@ -62,14 +62,14 @@ public class NotiAdapter extends BaseAdapter {
 
 
         Button delete1 =  convertView.findViewById(R.id.delete); // 버튼 선언 (사용하기 위한)
-        TextView date1 = convertView.findViewById(R.id.date);
+       // TextView date1 = convertView.findViewById(R.id.date);
         String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        date1.setText(currentDateTimeString);
+     //   date1.setText(currentDateTimeString);
 
-              delete1.setOnClickListener(new Button.OnClickListener() {
+        delete1.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
 
-             //   myref.database.ref().child('/chat/ㅇㅇ').set(null);
+                //   myref.database.ref().child('/chat/ㅇㅇ').set(null);
                 myRef = database.getReference("testLog");
                 list.remove(position);
                 notifyDataSetChanged(); //온클릭 안에서 리스트뷰를 새로고침 함
@@ -81,7 +81,7 @@ public class NotiAdapter extends BaseAdapter {
 
 
         tvTitle.setText(list.get(position).gettitle());
-       // tvContent.setText(list.get(position).getcontent()); //여기에 들어가면 내용이 추가됨
+        // tvContent.setText(list.get(position).getcontent()); //여기에 들어가면 내용이 추가됨
 
 
         return convertView;
