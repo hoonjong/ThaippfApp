@@ -21,7 +21,7 @@ import com.cookandroid.registerloginexample.httpUtil.RegisterActivity;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, insta, facebook, naver, youtube, test;
+    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6,imageView7, insta, facebook, naver, youtube, test;
     private ListView m_oListView = null;
     //private ImageView insta, facebook, naver;
     private Button webview_btn, register, sign;
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         imageView4 = findViewById(R.id.imageView4);
         imageView5 = findViewById(R.id.imageView5);
         imageView6 = findViewById(R.id.imageView6);
+        imageView7 = findViewById(R.id.imageView7);
         insta = findViewById(R.id.insta);
         facebook = findViewById(R.id.facebook);
         naver = findViewById(R.id.naver);
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         imageView4.setOnClickListener(onClickListener);
         imageView5.setOnClickListener(onClickListener);
         imageView6.setOnClickListener(onClickListener);
+        imageView7.setOnClickListener(onClickListener);
         insta.setOnClickListener(onClickListener);
         facebook.setOnClickListener(onClickListener);
         naver.setOnClickListener(onClickListener);
@@ -103,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.imageView6:
                     intent = new Intent(MainActivity.this, HuwonActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.imageView7:
+                    intent = new Intent(MainActivity.this, BibleActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.insta:

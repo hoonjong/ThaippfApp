@@ -12,10 +12,10 @@
         android:roundIcon="@drawable/thaippf"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:windowSoftInputMode="adjustResize"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustResize">
 
-       <activity android:name=".httpUtil.LoginActivity" /> <!--  로그인 진행-->
+        <activity android:name=".httpUtil.LoginActivity" /> <!--  로그인 진행-->
         <activity android:name=".SplashActivity">
 
             <intent-filter>
@@ -25,35 +25,38 @@
         </activity>
 
 
-          <activity android:name=".httpUtil.RegisterActivity" /> <!-- 회원가입 진행-->
-          <activity android:name=".MainActivity">
+        <activity android:name=".httpUtil.RegisterActivity" /> <!-- 회원가입 진행-->
+        <activity android:name=".MainActivity">
 
-              <!--    <intent-filter>
-                      <action android:name="android.intent.action.MAIN" />
+            <!--    <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
 
-                      <category android:name="android.intent.category.LAUNCHER" />
-                  </intent-filter> -->
-
-
-              </activity>
-              <activity android:name=".Unuse.FirstivActivity"></activity>
-              <activity android:name=".FirstScreen"></activity>
-              <activity android:windowSoftInputMode="adjustPan"  android:name=".SosicActivity"></activity>
-              <activity android:name=".PrayActivity"></activity>
-              <activity android:name=".DangiActivity"></activity>
-              <activity android:name=".WebView.ComesnsActivity"></activity>
-              <activity android:name=".WebView.WebViewActivity"></activity>
-              <activity android:name=".WebView.FacebookActivity"></activity>
-              <activity android:name=".WebView.BlogActivity"></activity>
-              <activity android:name=".WebView.YoutubeActivity"></activity>
-              <activity android:name=".HuwonActivity"></activity>
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter> -->
 
 
-              <activity android:name=".DetailActivity"></activity>
-              <activity android:name=".Firstiv"></activity>
-              <activity android:name=".SungoSogaeActivity"></activity>
+        </activity>
+        <activity android:name=".Unuse.FirstivActivity"></activity>
+        <activity android:name=".FirstScreen"></activity>
+        <activity
+            android:name=".SosicActivity"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name=".PrayActivity"></activity>
+        <activity android:name=".DangiActivity"></activity>
+        <activity android:name=".WebView.ComesnsActivity"></activity>
+        <activity android:name=".WebView.WebViewActivity"></activity>
+        <activity android:name=".WebView.FacebookActivity"></activity>
+        <activity android:name=".WebView.BlogActivity"></activity>
+        <activity android:name=".WebView.YoutubeActivity"></activity>
+        <activity android:name=".HuwonActivity"></activity>
+        <activity android:name=".BibleActivity"></activity>
 
 
-          </application>
+        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".Firstiv"></activity>
+        <activity android:name=".SungoSogaeActivity"></activity>
 
-      </manifest>
+
+    </application>
+
+</manifest>
