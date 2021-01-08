@@ -23,7 +23,7 @@ public class NotiAdapter extends BaseAdapter {
     // DB 데이터를 보여줄 ListView
     public ListView listView;
     public ArrayAdapter<String> dataAdapter;
-    public Button  deletebtn;
+    public Button delete;
     // DB 관련 변수
     public FirebaseDatabase database;
     public DatabaseReference myRef;
@@ -61,12 +61,12 @@ public class NotiAdapter extends BaseAdapter {
         TextView tvContent = convertView.findViewById(R.id.content);
 
 
-        Button delete1 =  convertView.findViewById(R.id.delete); // 버튼 선언 (사용하기 위한)
-       // TextView date1 = convertView.findViewById(R.id.date);
+        Button delete =  convertView.findViewById(R.id.delete); // 버튼 선언 (사용하기 위한)
+        // TextView date1 = convertView.findViewById(R.id.date);
         String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-     //   date1.setText(currentDateTimeString);
+        //   date1.setText(currentDateTimeString);
 
-        delete1.setOnClickListener(new Button.OnClickListener() {
+        delete.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
 
                 //   myref.database.ref().child('/chat/ㅇㅇ').set(null);

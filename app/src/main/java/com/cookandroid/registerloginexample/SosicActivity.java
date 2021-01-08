@@ -94,6 +94,8 @@ public class SosicActivity extends AppCompatActivity {
                     }
                 });
 
+
+
         // 자신이 얻은 Reference에 이벤트를 붙여줌
         // 데이터의 변화가 있을 때 출력해옴
 
