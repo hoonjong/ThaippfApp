@@ -18,7 +18,7 @@
             android:gravity="left"
             android:textSize="25dp"
             android:padding="7dp"
-            android:background="@drawable/edge"
+
             android:layout_margin="10dp"
             android:fontFamily="@font/baeminjua"
             android:textColor="#0091EA"/>
@@ -29,6 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:fontFamily="@font/font1"
+            android:background="@drawable/edge"
             android:onClick="test1"
             android:padding="23dp"
             android:text="2020년 10월 선교편지"
@@ -42,7 +43,7 @@
             android:fontFamily="@font/baeminjua"
             android:text="기도 제목"
             android:padding="7dp"
-            android:background="@drawable/edge"
+
             android:textColor="#0091EA"
             android:textSize="25dp" />
 

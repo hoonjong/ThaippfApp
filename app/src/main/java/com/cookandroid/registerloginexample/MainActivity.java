@@ -1,9 +1,13 @@
 package com.cookandroid.registerloginexample;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -49,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
         facebook = findViewById(R.id.facebook);
         naver = findViewById(R.id.naver);
         youtube = findViewById(R.id.youtube);
-        register = findViewById(R.id.register);
+   //     register = findViewById(R.id.register);
         sign = findViewById(R.id.sign);
         insta = findViewById(R.id.insta);
         facebook = findViewById(R.id.facebook);
         naver = findViewById(R.id.naver);
         youtube = findViewById(R.id.youtube);
-        sign = findViewById(R.id.sign);
+   //     sign = findViewById(R.id.sign);
 
 
         imageView1.setOnClickListener(onClickListener);
@@ -69,13 +73,13 @@ public class MainActivity extends AppCompatActivity {
         facebook.setOnClickListener(onClickListener);
         naver.setOnClickListener(onClickListener);
         youtube.setOnClickListener(onClickListener);
-        register.setOnClickListener(onClickListener);
-        sign.setOnClickListener(onClickListener);
+//        register.setOnClickListener(onClickListener);
+//        sign.setOnClickListener(onClickListener);
         insta.setOnClickListener(onClickListener);
         facebook.setOnClickListener(onClickListener);
         naver.setOnClickListener(onClickListener);
         youtube.setOnClickListener(onClickListener);
-        sign.setOnClickListener(onClickListener);
+    //    sign.setOnClickListener(onClickListener);
         //  test.setOnClickListener(onClickListener);
     }
 
@@ -93,7 +97,18 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.imageView3:
-                    Toast.makeText(MainActivity.this, "이 페이지는 현재 준비중입니다. 불편을 드려 죄송합니다.", Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(MainActivity.this);
+                    dlg.setTitle("현재 준비중 입니다."); //제목
+                    dlg.setMessage("불편을 드려서 죄송합니다.");
+                    dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+
+                        }
+                    });
+                    dlg.show();
+                   // Toast.makeText(MainActivity.this, "이 페이지는 현재 준비중입니다. 불편을 드려 죄송합니다.", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageView4:
                     intent = new Intent(MainActivity.this, DangiActivity.class);
@@ -131,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     Toast.makeText(getApplicationContext(), "유튜브 채널을 여는중입니다. \n  잠시만 기다려주세요", Toast.LENGTH_LONG).show();
                     break;
+                    /*
                 case R.id.register:
                     register = findViewById(R.id.register);
                     register.setOnClickListener(new View.OnClickListener() {
@@ -144,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
                     break;
-
+*/
 
             }
 
@@ -152,4 +168,45 @@ public class MainActivity extends AppCompatActivity {
 
 
     };
+
+
+    //액션버튼 메뉴 액션바에 집어 넣기
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    //액션버튼을 클릭했을때의 동작
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        //or switch문도 이용가능^^
+        if (id == R.id.action_chat) {
+            Intent email = new Intent(Intent.ACTION_SEND);
+            Toast.makeText(this, "G_Mail 링크를 연결해드리겠습니다.", Toast.LENGTH_SHORT).show();
+            email.setType("plain/text");
+            // email setting 배열로 해서 복수 발송 가능
+            String[] address = {"qkr7627@gmail.com"};
+            email.putExtra(Intent.EXTRA_EMAIL, address);
+            email.putExtra(Intent.EXTRA_SUBJECT, "개발자님 문의합니다.");  //Gmail 제목 고정
+            email.putExtra(Intent.EXTRA_TEXT, "부족한 점이 많을 수 있습니다. 욕설 및 비하발언은 삼가해주시기 바랍니다.\n (이 내용은 지우고 작성하시면 됩니다.)"); // 내용 고정
+            startActivity(email);
+            return true;
+        }
+        if (id == R.id.action_share) {
+            Intent msg = new Intent(Intent.ACTION_SEND);
+            msg.addCategory(Intent.CATEGORY_DEFAULT);
+            msg.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.cookandroid.registerloginexample");
+            msg.putExtra(Intent.EXTRA_TITLE, "제목");
+            msg.setType("text/plain");
+            startActivity(Intent.createChooser(msg, "앱을 선택해 주세요"));
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    } //onOptionsItemSelected의 끝
+
+
+
 }

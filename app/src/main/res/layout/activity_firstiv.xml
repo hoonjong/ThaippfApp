@@ -10,99 +10,98 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:onClick="iv1"
+                        android:scaleType="centerCrop" />
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:onClick="iv1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sogae" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sogae" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/edge"
-                android:fontFamily="@font/baeminjua"
-                android:gravity="center_horizontal"
-                android:text="선교지 소개(태국-치앙마이)"
-                android:textColor="#2E2823"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/edge"
-                android:fontFamily="@font/baeminjua"
-                android:gravity="center_horizontal"
-                android:text="주요 사역"
-                android:textColor="#2E2823"
-                android:textSize="17sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sogae" />
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                       />
+                </LinearLayout>
 
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/edge"
-                android:fontFamily="@font/baeminjua"
-                android:gravity="center"
-                android:text="사역자소개 및 연락처"
-                android:textColor="#2E2823"
-                android:textSize="17sp" />
+                        android:fontFamily="@font/baeminjua"
+                        android:gravity="center_horizontal"
+                        android:text="선교지 소개(태국-치앙마이)"
+                        android:textColor="#2E2823"
+                        android:textSize="17sp" />
 
-        </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
 
+                        android:fontFamily="@font/baeminjua"
+                        android:gravity="center_horizontal"
+                        android:text="주요 사역"
+                        android:textColor="#2E2823"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                      />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:fontFamily="@font/baeminjua"
+                        android:gravity="center"
+                        android:text="사역자소개 및 연락처"
+                        android:textColor="#2E2823"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+        -->
 
     </LinearLayout>
 </ScrollView>

@@ -3,7 +3,10 @@ package com.cookandroid.registerloginexample;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 //커밋테스트중
@@ -35,6 +38,7 @@ public class DangiActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://brunch.co.kr/@keemjungwan/8"));
         startActivity(intent);
     }
+
 
 
 }

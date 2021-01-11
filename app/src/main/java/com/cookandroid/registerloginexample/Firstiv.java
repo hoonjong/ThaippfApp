@@ -1,5 +1,6 @@
 package com.cookandroid.registerloginexample;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cookandroid.registerloginexample.Unuse.FirstivActivity;
@@ -28,6 +30,19 @@ public class Firstiv extends AppCompatActivity {
 
         setView();
 
+
+        AlertDialog.Builder dlg = new AlertDialog.Builder(Firstiv.this);
+        dlg.setTitle("현재 준비중 입니다."); //제목
+        dlg.setMessage("불편을 드려서 죄송합니다.");
+
+        dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+
+            }
+        });
+        dlg.show();
 
     }
 

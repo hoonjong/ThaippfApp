@@ -2,15 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- never을 always 로 하면 이미지로 상단바에 구현됨-->
 
     <item
-        android:id="@+id/action_save"
-        android:icon="@android:drawable/ic_menu_save"
-        android:title="저장"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/action_setting"
-        android:title="실행"
-        app:showAsAction="never" />
+        android:id="@+id/action_chat"
+        android:icon="@drawable/g_mail2"
+        android:title="개발자에게 문의하기"
+        app:showAsAction="always" />
 
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/share_label1"
+        android:title="공유하기"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/notitle"
+        android:title="준비중 입니다." />
 </menu>

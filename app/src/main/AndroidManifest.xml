@@ -8,7 +8,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/thaippf"
-        android:label="ThaiPPF"
+        android:label="하나님의 언약의 사람들"
         android:roundIcon="@drawable/thaippf"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
