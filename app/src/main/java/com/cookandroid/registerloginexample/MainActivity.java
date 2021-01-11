@@ -25,12 +25,12 @@ import com.cookandroid.registerloginexample.httpUtil.RegisterActivity;
 import com.github.chrisbanes.photoview.PhotoView;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6,imageView7, insta, facebook, naver, youtube, test;
+    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, imageView7, insta, facebook, naver, youtube, test;
     private ListView m_oListView = null;
     //private ImageView insta, facebook, naver;
     private Button webview_btn, register, sign;
 
-//생명주기 onCreate - onStart - onResume 문제있으면 수정해야 함. 아직까진 괜찮은 상황 - 2020.12.20
+    //생명주기 onCreate - onStart - onResume 문제있으면 수정해야 함. 아직까진 괜찮은 상황 - 2020.12.20
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
         facebook = findViewById(R.id.facebook);
         naver = findViewById(R.id.naver);
         youtube = findViewById(R.id.youtube);
-   //     register = findViewById(R.id.register);
+        //     register = findViewById(R.id.register);
         sign = findViewById(R.id.sign);
         insta = findViewById(R.id.insta);
         facebook = findViewById(R.id.facebook);
         naver = findViewById(R.id.naver);
         youtube = findViewById(R.id.youtube);
-   //     sign = findViewById(R.id.sign);
+        //     sign = findViewById(R.id.sign);
 
 
         imageView1.setOnClickListener(onClickListener);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         facebook.setOnClickListener(onClickListener);
         naver.setOnClickListener(onClickListener);
         youtube.setOnClickListener(onClickListener);
-    //    sign.setOnClickListener(onClickListener);
+        //    sign.setOnClickListener(onClickListener);
         //  test.setOnClickListener(onClickListener);
     }
 
@@ -89,17 +89,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent;
             switch (v.getId()) {
                 case R.id.imageView1:
-                    intent = new Intent(MainActivity.this, Firstiv.class);
-                    startActivity(intent);
-                    break;
-                case R.id.imageView2:
-                    intent = new Intent(MainActivity.this, SosicActivity.class);
-                    startActivity(intent);
-                    break;
-                case R.id.imageView3:
+                    // intent = new Intent(MainActivity.this, Firstiv.class);
+                    // startActivity(intent);
                     AlertDialog.Builder dlg = new AlertDialog.Builder(MainActivity.this);
                     dlg.setTitle("현재 준비중 입니다."); //제목
                     dlg.setMessage("불편을 드려서 죄송합니다.");
+
                     dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -108,7 +103,23 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                     dlg.show();
-                   // Toast.makeText(MainActivity.this, "이 페이지는 현재 준비중입니다. 불편을 드려 죄송합니다.", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.imageView2:
+                    intent = new Intent(MainActivity.this, SosicActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.imageView3:
+                    AlertDialog.Builder dlo = new AlertDialog.Builder(MainActivity.this);
+                    dlo.setTitle("현재 준비중 입니다."); //제목
+                    dlo.setMessage("불편을 드려서 죄송합니다.");
+                    dlo.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    dlo.show();
+                    // Toast.makeText(MainActivity.this, "이 페이지는 현재 준비중입니다. 불편을 드려 죄송합니다.", Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.imageView4:
                     intent = new Intent(MainActivity.this, DangiActivity.class);
@@ -206,7 +217,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     } //onOptionsItemSelected의 끝
-
 
 
 }

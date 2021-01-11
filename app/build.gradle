@@ -8,8 +8,9 @@ android {
         applicationId "com.cookandroid.registerloginexample"
         minSdkVersion 15
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
+        //1.1 패치 - 01.11 UI 및 기본 구성 수정
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

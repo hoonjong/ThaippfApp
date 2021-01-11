@@ -15,9 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:gravity="left"
+            android:padding="5dp"
+            android:gravity="center"
             android:text="Pray for Thailand"
-            android:textColor="#FF6D00"
+            android:fontFamily="@font/nanumbold"
+            android:textColor="#2196F3"
             android:textSize="40dp" />
 
         <TextView
@@ -76,16 +78,33 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ajan4" />
+
+
         </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+            />
+
+
+      </LinearLayout>
+
 
 
         <TextView
             android:layout_width="395dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:fontFamily="@font/font1"
+            android:fontFamily="@font/nanumbold"
             android:text="후원계좌"
-            android:textColor="#FF6D00"
+            android:textColor="#2196F3"
             android:textSize="25dp" />
 
         <LinearLayout
@@ -98,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/nanumbold"
                 android:padding="3dp"
                 android:text="Tel. 태국/치앙마이"
                 android:textSize="14dp" />
@@ -108,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/nanumbold"
                 android:padding="3dp"
                 android:text="E-mail"
                 android:textSize="14dp" />
@@ -125,7 +144,7 @@
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/nanumbold"
                 android:padding="3dp"
                 android:text="+66. 091. 629. 7342"
                 android:textSize="14dp" />
@@ -135,7 +154,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/nanumbold"
                 android:padding="3dp"
                 android:text="박문성 pavarotti0629@hotmail.com"
                 android:textSize="13dp" />
@@ -152,7 +171,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/nanumbold"
                 android:padding="3dp"
                 android:text="070. 7527. 6732"
                 android:textSize="14dp" />
@@ -162,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_margin="5dp"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/nanumbold"
                 android:padding="3dp"
                 android:text="고봉신 domybestgo@hotmail.com"
                 android:textSize="13dp" />
@@ -177,20 +196,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:fontFamily="@font/font1"
-                android:padding="10dp"
+                android:fontFamily="@font/baeminjua"
+                android:padding="5dp"
                 android:text="후원계좌(한국): 917702-01-145292  국민은행. 박문성"
-                android:textColor="#FF6D00"
+                android:textColor="#FF5722"
                 android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:fontFamily="@font/font1"
-                android:padding="10dp"
+                android:fontFamily="@font/baeminjua"
+                android:padding="5dp"
                 android:text="후원계좌(미국): 42004373421  Citibank. Moon Sung Park"
-                android:textColor="#FF6D00"
+                android:textColor="#FF5722"
                 android:textSize="14dp" />
         </LinearLayout>
 
