@@ -1,23 +1,10 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.activity;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.cookandroid.registerloginexample.Unuse.FirstivActivity;
-import com.cookandroid.registerloginexample.WebView.BlogActivity;
-import com.cookandroid.registerloginexample.WebView.FacebookActivity;
-import com.cookandroid.registerloginexample.WebView.WebViewActivity;
-import com.cookandroid.registerloginexample.WebView.YoutubeActivity;
-import com.cookandroid.registerloginexample.httpUtil.LoginActivity;
-import com.cookandroid.registerloginexample.httpUtil.RegisterActivity;
+import com.cookandroid.registerloginexample.R;
 
 public class Firstiv extends AppCompatActivity {
    // private ImageView imageView1;
@@ -26,7 +13,7 @@ public class Firstiv extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstiv);
+        setContentView(R.layout.activity_sogae);
 
        // setView();
 

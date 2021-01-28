@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
-import com.cookandroid.registerloginexample.MainActivity;
+import com.cookandroid.registerloginexample.activity.MainActivity;
 import com.cookandroid.registerloginexample.R;
 
 import org.json.JSONException;

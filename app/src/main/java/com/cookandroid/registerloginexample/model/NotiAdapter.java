@@ -1,4 +1,4 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.model;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.cookandroid.registerloginexample.R;
+import com.cookandroid.registerloginexample.model.Board;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 

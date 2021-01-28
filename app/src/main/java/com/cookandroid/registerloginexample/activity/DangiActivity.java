@@ -1,4 +1,4 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,9 +9,22 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-//커밋테스트중
+
+import com.cookandroid.registerloginexample.R;
+
+/**
+ * 단기 선교 준비 액티비티 입니다.
+ * 해당 액티비티는 태국 단기 선교를 가기전 태국의 역사 및 문화 등 다양한 내용을 공부할 수 있도록
+ * 텍스트뷰로 내용이 저장되어 있습니다.
+ * (내용이 고정되어 있는 만큼, 내용을 더 다듬는 작업을 진행해야 함.)
+ *
+ *
+ * 현재 기능은 버튼 클릭시 네이버 블로그 및 페이지를 참조하여 태국 자세히 들여다보기, 태국 간단히 들여다보기 등
+ * 의 내용이 포함되어 있습니다.
+ */
+
 public class DangiActivity extends AppCompatActivity {
-//커밋테스트
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

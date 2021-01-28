@@ -16,7 +16,7 @@
         android:windowSoftInputMode="adjustResize">
 
         <activity android:name=".httpUtil.LoginActivity" /> <!--  로그인 진행-->
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activity.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
 
 
         <activity android:name=".httpUtil.RegisterActivity" /> <!-- 회원가입 진행-->
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
 
             <!--    <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
@@ -36,25 +36,25 @@
 
 
         </activity>
-        <activity android:name=".Unuse.FirstivActivity"></activity>
-        <activity android:name=".FirstScreen"></activity>
+        <activity android:name=".activity.SogaeAct"></activity>
+        <activity android:name=".Unuse.FirstScreen"></activity>
         <activity
-            android:name=".SosicActivity"
+            android:name=".activity.SosicActivity"
             android:windowSoftInputMode="adjustPan"></activity>
-        <activity android:name=".PrayActivity"></activity>
-        <activity android:name=".DangiActivity"></activity>
+        <activity android:name=".activity.PrayActivity"></activity>
+        <activity android:name=".activity.DangiActivity"></activity>
         <activity android:name=".WebView.ComesnsActivity"></activity>
         <activity android:name=".WebView.WebViewActivity"></activity>
         <activity android:name=".WebView.FacebookActivity"></activity>
         <activity android:name=".WebView.BlogActivity"></activity>
         <activity android:name=".WebView.YoutubeActivity"></activity>
-        <activity android:name=".HuwonActivity"></activity>
-        <activity android:name=".BibleActivity"></activity>
+        <activity android:name=".activity.HuwonActivity"></activity>
+        <activity android:name=".activity.BibleActivity"></activity>
 
 
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".Firstiv"></activity>
-        <activity android:name=".SungoSogaeActivity"></activity>
+        <activity android:name=".activity.DetailActivity"></activity>
+        <activity android:name=".activity.Firstiv"></activity>
+        <activity android:name=".activity.MissinaryPrepare_Act"></activity>
 
 
     </application>

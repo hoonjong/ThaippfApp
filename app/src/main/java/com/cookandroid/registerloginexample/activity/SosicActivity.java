@@ -1,4 +1,4 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +14,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.cookandroid.registerloginexample.model.NotiAdapter;
+import com.cookandroid.registerloginexample.R;
+import com.cookandroid.registerloginexample.model.Board;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +26,13 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+/** 이 앱의 핵심 기능이 담긴 선교지 소개 액티비티 입니다.
+ *  Firebase Realtimebase를 이용하여 액티비티에서 작성한 글을
+ *  실시간으로 CRUD 할 수 있도록 합니다.
+ *  (현재는 수정, 삭제 기능이 미구현 상태)
+ *
+ */
 
 public class SosicActivity extends AppCompatActivity {
     // 제목, 내용

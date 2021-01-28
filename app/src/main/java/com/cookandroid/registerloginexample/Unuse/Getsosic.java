@@ -1,25 +1,29 @@
 package com.cookandroid.registerloginexample.Unuse;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.cookandroid.registerloginexample.R;
-
-public class FirstivActivity extends AppCompatActivity {
-
-
+public class Getsosic extends AppCompatActivity {
+//테스트중
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_firstiv);
+        /* xml과 연결 */
 
+        Intent intent = getIntent();
+        String str1 = intent.getExtras().getString("msg");
     }
 }
+
+
+
+
+
+
+
+
+

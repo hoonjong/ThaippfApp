@@ -1,12 +1,13 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.cookandroid.registerloginexample.httpUtil.LoginActivity;
-  //깃허브 체크용
+import com.cookandroid.registerloginexample.R;
+
+
 public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

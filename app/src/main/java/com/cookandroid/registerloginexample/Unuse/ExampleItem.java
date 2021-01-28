@@ -1,4 +1,4 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.Unuse;
 //12월 9일 주석
 //12월 9일 주석 테스트 (git)
 public class ExampleItem {

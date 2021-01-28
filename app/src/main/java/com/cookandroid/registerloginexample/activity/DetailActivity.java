@@ -1,4 +1,4 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.activity;
 
 
 
@@ -10,6 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.cookandroid.registerloginexample.R;
+
+/** 해당 액티비티는 선교지 소식 액티비티에 사용되는 CardView 및 인텐트로 넘겨주는 내용을 받아오는 곳 입니다.
+ *
+ *
+ */
 public class DetailActivity extends AppCompatActivity {
 
     private Intent intent;

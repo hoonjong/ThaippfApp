@@ -1,10 +1,12 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.Unuse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.cookandroid.registerloginexample.R;
 
 import org.w3c.dom.Text;
 

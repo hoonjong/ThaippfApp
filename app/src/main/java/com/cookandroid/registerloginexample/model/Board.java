@@ -1,13 +1,13 @@
-package com.cookandroid.registerloginexample;
+package com.cookandroid.registerloginexample.model;
 
 public class Board {
     String title;
     String content;
 
-   // String date;
+    // String date;
 
 
-  public Board() {}
+    public Board() {}
 
     public Board(String title, String content) {
         this.title = title;
@@ -31,7 +31,7 @@ public class Board {
 
 
 
-  //  public void setDate(String date) {
-      //  this.date = date;
-    }
+    //  public void setDate(String date) {
+    //  this.date = date;
+}
 
